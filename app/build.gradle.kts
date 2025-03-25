@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.devtools.kpt)
     kotlin("plugin.serialization") version "2.1.20"
 }
 
@@ -42,6 +43,7 @@ android {
 
 dependencies {
     implementation(libs.androidx.room)
+    ksp(libs.androidx.room.compiler)
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.androidx.navigation)
 

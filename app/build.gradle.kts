@@ -41,6 +41,7 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidx.room)
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.androidx.navigation)
 

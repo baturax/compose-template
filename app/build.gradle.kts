@@ -42,10 +42,13 @@ android {
 }
 
 dependencies {
+    implementation(libs.dagger.hilt)
     implementation(libs.androidx.room)
-    ksp(libs.androidx.room.compiler)
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.androidx.navigation)
+
+    ksp(libs.androidx.room.compiler)
+    ksp(libs.dagger.hilt.compiler)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

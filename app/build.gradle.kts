@@ -42,6 +42,8 @@ android {
 }
 
 dependencies {
+    implementation(libs.compose.lifecycle.viewmodel)
+    implementation(libs.compose.lifecycle.runtime)
     implementation(libs.dagger.hilt)
     implementation(libs.androidx.room)
     implementation(libs.kotlinx.serialization.json)

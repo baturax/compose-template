@@ -18,6 +18,7 @@ datastore = "1.1.4"
 coroutines = "1.10.1"
 collections = "0.3.8"
 
+#de
 [libraries]
 kotlinx-collections-immutable = { group = "org.jetbrains.kotlinx", name = "kotlinx-collections-immutable", version.ref = "collections" }
 kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
